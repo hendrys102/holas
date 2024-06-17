@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Especial</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #ff69b4;
+        }
+        .heart {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="myButton">estripa este boton </button>
+        <div id="message" class="message"></div>
+    </div>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            document.getElementById('message').innerHTML = 'Eres muy hermosa, bella, preciosa, atentamente yo xd <span class="heart">❤</span>';
+        });
+    </script>
+</body>
+</html>
